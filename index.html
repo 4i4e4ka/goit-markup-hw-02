@@ -4,103 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Студия вебдизайна</title>
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
     <header>
         <nav>
             <a href="">
-                <span>Web Studio</span>
+                <span="logo" class="logo">Web Studio</span>
             </a> 
-    <ul>
+    <ul class="site-nav list">
         <li>
-            <a href="">Студия</a>      
+            <a href=""class="link current">Студия</a>      
         </li>
         <li>
-            <a href="">Портфолио</a> 
+            <a href=""class="link">Портфолио</a> 
         </li>
         <li>
-            <a href="">Контакты</a>  
+            <a href=""class="link">Контакты</a>  
         </li>
     </ul>
         </nav>
 <!--Контакты я бы или в div или address, но делаю списком-->
-<ul>
+<ul class="auth-nav list">
     <li>
-        <a>
+        <a href="" class="contact current">
         <img src="./images/envelope.svg" alt="иконка конверта" width="11.2"/> 
     <span>info@devstudio.com</span>
 </a>
     </li>
     <li>
-        <a href="#"> <img src="./images/tel.svg" alt="иконка телефона" width="10"/> 
-            <span>+38 096 111 11 11</span> </a>
+        <a href="#"> <imgsrc="./images/tel.svg" alt="иконка телефона" width="10"/> 
+            <span class="contact">+38 096 111 11 11</span></a>
     </li>
 </ul>  
     </header>
     <main>
         <section>
         <!--фоновая картинка при помощо CSS-->
-        <h1>
+        <h1 class="hero">
             Эффективные решения для вашего бизнеса
         </h1>
         <!--тут наверное копка?-->
-        <a href=""> <img src="./images/button-yslyga.svg" alt="фон кнопки">Заказать услугу</a>
+        <a href=""> <img src="./images/button-yslyga.svg" class="button primary">Заказать услугу</a>
 </section>
 <section>/
     <h2> <!--Скрытый заголовок--> </h2>
-    <ul>
+    <ul class="features"> 
         <li>
             <img src="./images/antenna.svg">
-<h4>Внимание к деталям</h4>
+<h4 class="title">Внимание к деталям</h4>
 <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
 <li>
     <img src="./images/clock.svg">
-    <h4>Пунктуальность</h4>
+    <h4 class="title">Пунктуальность</h4>
     <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
 </li>
 <li>
     <img src="images/desctop.svg">
-    <h4>Планирование</h4>
+    <h4 class="title">Планирование</h4>
     <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
 </li>
 <li>
     <img src="images/astronavt.svg">
-    <h4>Современные технологии</h4>
+    <h4 class="title">Современные технологии</h4>
     <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
 </li>
     </ul>
 </section>
-<section>
-    <h3>Чем мы занимаемся </h3>
+<section class="function">
+    <h3 class="title">Чем мы занимаемся </h3>
     <ul>
         <li>
     <a href="">
         <img src="images/desctopapp.png" alt="изображение дескстопного приложение" width="370"/>
-      <p>Десктопные приложения</p>
+      <p class="subtitle">Десктопные приложения</p>
     </a>
         </li>
         <li>
-    <a href="">
+    <a href="" >
         <img src="images/mobapp.png" alt="изображение мобильного приложение" width="370"/>
-        <p>Мобильные приложения</p>
+        <p class="subtitle">Мобильные приложения</p>
     </a>
         </li>
         <li>
     <a href="">
         <img src="images/designsolution.png" alt="изображение дизайнерские решения" width="370"/>
-        <p>Дизайнерские решения</p>
+        <p class="subtitle">Дизайнерские решения</p>
     </a>
     </li>
     </ul>
 </section>
-<section>
-    <h3>Наша команда</h3>
+<section class="team">
+    <h3 class="title">Наша команда</h3>
     <ul>
         <li>
             <img src="./images/nikolai.jpg" alt="фото Николая" width="270"/>
-            <p>Николай Кучеренко</p>
-            <p>Product Designer</p>
+            <p class="name">Николай Кучеренко</p>
+            <p class="position">Product Designer</p>
     <ul>
         <li>
             <a href=""> <img src="images/instanik.svg" alt="изображения инстаграмм"/></a>
@@ -117,8 +118,8 @@
 
     <li>
         <img src="./images/olha.png" alt="фото ольги" width="270"/>
-        <p>Ольга Иванова</p>
-        <p>Frontend Developer</p>
+        <p class="name">Ольга Иванова</p>
+        <p class="position">Frontend Developer</p>
     <li>
         <a href=""> <img src="images/instanik.svg" alt="изображения инстаграмм"/></a>
     </li>
@@ -135,8 +136,8 @@
 
 <li>
     <img src="./images/andrii.png" alt="фото Николая" width="270"/>
-    <p>Андрей Шевченко</p>
-    <p>Marketing</p>
+    <p  class="name">Андрей Шевченко</p>
+    <p class="position">Marketing</p>
 <li>
     <a href=""> <img src="images/instanik.svg" alt="изображения инстаграмм"/></a>
 </li>
@@ -154,8 +155,8 @@
 
 <li>
     <img src="./images/ivan.png" alt="фото Николая" width="270"/>
-    <p>Иван Николаев</p>
-    <p>UI Designer</p>
+    <p class="name">Иван Николаев</p>
+    <p class="position">UI Designer</p>
 <li>
     <a href=""> <img src="images/instanik.svg" alt="изображения инстаграмм"/></a>
 </li>
@@ -168,6 +169,30 @@
 <li>
 <a href=""> <img src="images/linkedin.svg" alt="изображения линкидинн"/></a>
 </li>
+    </ul>
+</section>
+
+<section class="clients">
+    <h3 class="title">Постоянные клиенты</h3>
+    <ul>
+        <li>
+            <img src="./images/client 1.png"/>
+        </li>
+        <li>
+            <img src="./images/client 2.png"/>
+        </li>
+        <li>
+            <img src="./images/client 3.png"/>
+        </li>
+        <li>
+            <img src="./images/client 4.png"/>
+        </li>
+        <li>
+            <img src="./images/client 5.png"/>
+        </li>
+        <li>
+            <img src="./images/client 6.png"/>
+        </li>
     </ul>
 </section>
     </main>

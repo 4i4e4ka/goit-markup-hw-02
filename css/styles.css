@@ -22,12 +22,20 @@ a {
 ul{
     list-style: none;
 }
+
+
+
+
+/*
 .logo{
     color: var(--accent-color);
 }
 .logo:hover{
     color: var(--title-text-color);
-}
+}*/
+
+
+
 .site-nav .link{
 color: var(--title-text-color);
 }
@@ -53,17 +61,25 @@ color: var(--title-text-color);
 .auth-nav .contact:focus{
     color: var(--accent-color);
 }
+.hero .title{
+    color: var(--primary-white-color);
+    background: rgba(47, 48, 58, 0.8);
+}
+
 
 .button.primary{
 color: var(--primary-white-color);
 background-color: var(--accent-color);
+background: #2196F3;
 }
+
+
 .features .title{
     color:var(--title-text-color);
 }
 
 .function .title{
-    color: var(--title-text-color)
+    color: var(--title-text-color);
 }
 
 .function .subtitle{
@@ -87,5 +103,5 @@ top: 1435px
 }
 
 .clients .title{
-    color: red;
+    color:var(--title-text-color);
 }

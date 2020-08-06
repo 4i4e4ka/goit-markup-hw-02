@@ -23,7 +23,10 @@ ul{
     list-style: none;
 }
 
-
+p{
+    font-family: Roboto;
+font-style: normal;
+}
 
 
 /*
@@ -105,3 +108,14 @@ top: 1435px
 .clients .title{
     color:var(--title-text-color);
 }
+. button portfolio .button{
+color: var(--primary-white-color);
+background-color:#F5F4FA;
+}
+
+.button portfolio .button:hover,
+.button portfolio .button:focus{
+    color: var(--accent-color);
+}
+
+

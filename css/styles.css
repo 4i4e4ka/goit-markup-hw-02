@@ -105,17 +105,39 @@ top: 1435px
     color: var(--primary-text-color);
 }
 
-.clients .title{
-    color:var(--title-text-color);
-}
-. button portfolio .button{
-color: var(--primary-white-color);
-background-color:#F5F4FA;
+.ourclients{
+    color: var(--title-text-color);
 }
 
-.button portfolio .button:hover,
-.button portfolio .button:focus{
+h3{
+    color: var(--title-text-color);
+}
+
+
+
+
+
+
+
+
+.footer{
+    color: red;
+}
+
+.portfolio{
+    color: red;
+}
+. button-portfolio .button{
+color: var(--primary-white-color);
+background-color:
+
+
+.button-portfolio .button:hover,
+.button-portfolio .button:focus{
     color: var(--accent-color);
 }
 
 
+.portfolio-link .link{
+    color:#212121;
+}

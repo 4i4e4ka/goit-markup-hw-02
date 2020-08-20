@@ -10,7 +10,13 @@
     --accent-color: #2196F3;
     --primary-white-color:#FFFFFF;
   }
-
+  html{
+    *,
+    *::before,
+    *::after
+    box-sizing: border-box;
+    box-sizing: inherit
+    }
 body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
@@ -22,7 +28,7 @@ body {
 a {
     text-decoration: none;
 }
-ul{
+ul {
     list-style: none;
 }
 
@@ -34,7 +40,7 @@ ul{
     color: var(--title-text-color);
 }*/
 
-.logo{
+.logo {
     color:var(--title-text-color)
     font-family: Raleway;
 font-style: normal;
@@ -42,39 +48,34 @@ font-weight: bold;
 font-size: 26px;
 line-height:1.2;
 }
-.logo .accent{
+.logo-accent {
     color:#2196F3;
 }
 
-.site-nav .link{
+.site-nav .link {
 color: var(--title-text-color);
 font-weight:500;
+font-size: 14px;
+line-height: 1.1
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
 }
-.site-nav .link.current {
-    color: var(--accent-color);
-  }
-
-  .list {
-    list-style: none;
-  }
-  .auth-nav .contact{
+  .auth-nav .contact {
       color: var(--primary-text-color);
       font-weight:500;
+      font-weight:500;
+    font-size: 14px;
+line-height: 1.1
   }
 
-.auth-nav .contact.current{
-    color: var(--accent-color)
-}
 .auth-nav .contact:hover,
-.auth-nav .contact:focus{
+.auth-nav .contact:focus {
     color: var(--accent-color);
 }
 
-.hero .title{
+.hero-title {
     color: var(--primary-white-color);
     background: rgba(47, 48, 58, 0.8);
 font-weight: 900;
@@ -84,38 +85,38 @@ text-align: center;
 }
 
 
-.button.primary{
+.button.primary {
 color: var(--primary-white-color);
-background-color: var(--accent-color);
 background: #2196F3;
 font-family: inherit;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
-.button.primary:hover{
+/*.button.primary:hover {
     color: tomato;
-}
+}*/
 
-.features .title{
+.features-title {
     color:var(--title-text-color);
     font-weight: 700;
 font-size: 14px;
-line-height: 1.1;
+line-height: 1.2;
 }
-.features .text{
+.features-text {
     color: var(--primary-text-color);
     font-weight:400;
 font-size: 14px;
 line-height: 1.7;
 }
-.box{
+.features-box {
 width: 270px;
 height: 120px;
 left: 215px;
 top: 774px;
-border: 5px solid teal;
-background: #F5F4FA
+background: #F5F4FA;
 border-radius: 4px
 }
-.function .title{
+.function-title {
     color: var(--title-text-color);
     font-weight: 700;
 font-size: 36px;
@@ -123,7 +124,7 @@ line-height: 1.2;
 text-align: center;
 }
 
-.function .subtitle{
+.function-subtitle {
     color:var(--primary-white-color);
     background: rgba(47, 48, 58, 0.8);
     font-weight: 700;
@@ -132,20 +133,20 @@ text-align: center;
 }
 
 
-.team .title{
-    color: var(--title-text-color);
+.team-title {
+    color:var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
 }
-.team .name{
+.team-name {
     color: var(--title-text-color);
     font-weight: 500;
 font-size: 16px;
 line-height: 1.1;
 
-.team .position{
+.team-position {
     color: var(--primary-text-color);
     font-weight:400;
 font-size: 16px;
@@ -154,10 +155,26 @@ line-height: 1.1;
 .clients-title{
     color: tomato;
 }
-.footer .address{
+.footer-logo {
+    color:var(--title-text-color)
+    font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height:1.2;
+}
+.footer-logo-accent {
+    color:#2196F3;
+}
+.footer-address {
     color: tomato;
 }
-.footer .text{
-    color:tomato;
-}
 
+
+
+.portfolio-button {
+    color:var(--primary-white-color))
+}
+.portfolio-title {
+    color:red;
+}

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Студия вебдизайна</title>
+    <link rel="stylesheet" href="./css/styles.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css" integrity="sha512-yp4nScgc3FLGSJK6gj7q+YzX4ApX8ifljxvw3x5oYG4Js/u7ABw/U+pP31kefS2iz83pHbwe+Le2WvcosArp6Q==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
     <header>
@@ -23,7 +23,7 @@
 
     <ul class="site-nav list">
         <li>
-            <a href="" class="link">Студия</a>      
+            <a href="./index.html" class="link current">Студия</a>      
         </li>
         
         <li>
@@ -61,7 +61,7 @@
 </section>
 <section>
     <h2> <!--Скрытый заголовок--> </h2>
-    <ul class="features"> 
+    <ul class="features list"> 
         <li>
             <img src="./images/antenna.svg" alt="antennaimage" class="features-box">
 <h4 class="features-title">Внимание к деталям</h4>
@@ -86,7 +86,7 @@
 </section>
 <section class="function">
     <h3 class="function-title">Чем мы занимаемся </h3>
-    <ul>
+    <ul class="function list">
         <li>
     <a href="">
         <img src="images/desctopapp.jpg" alt="изображение дескстопного приложение" width="370"/>
@@ -109,7 +109,7 @@
 </section>
 <section class="team">
     <h3 class="team-title">Наша команда</h3>
-    <ul>
+    <ul class="team list">
         <li>
             <img src="./images/nikolai.jpg" alt="фото Николая" width="270"/>
             <p class="team-name">Николай Кучеренко</p>
@@ -182,7 +182,7 @@
 </section>
 <section class="clients">
         <h3 class="clients-title">Постоянные клиенты</h3>
-    <ul>
+    <ul class="clients list">
         <li>
             <img src="./images/client1.png" alt="client"/>
         </li>
@@ -233,8 +233,8 @@
             </address>
         </div>
         
-        <div>
-            <p>присоединяйтесь</p>
+        <div class="footer">
+            <p class="footer-button">присоединяйтесь</p>
             <a href="#">
                 <img src="images/Vector.svg" alt="изображения инстаграмм"/>
             </a>
@@ -249,7 +249,7 @@
             </a>
         </div>
         <div>
-            <p>Подпишитесь на рассылку</p>
+            <p class="button primary" type="button">Подпишитесь на рассылку</p>
             <!--форма рассылки позже-->
         </div>
 </footer>

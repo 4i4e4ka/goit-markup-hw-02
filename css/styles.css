@@ -5,36 +5,38 @@
 /*вторичный цвет фона #F5F4FA;*/
 
 :root {
-    --primary-text-color:#757575;
-    --title-text-color: #212121;
-    --accent-color: #2196F3;
-    --primary-white-color:#FFFFFF;
-  }
-  html{
-    *,
-    *::before,
-    *::after
-    box-sizing: border-box;
-    box-sizing: inherit
-    }
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-    background-color: var(--primary-white-color);
-    color: var(--primary-text-color);
-    font-family:Roboto, sans-serif;
-    letter-spacing: 0.03em;
-    margin:0;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  margin: 0;
 }
 .container {
-    width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-   }
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 /*
@@ -46,159 +48,160 @@ a {
 }*/
 
 .logo {
-    color:var(--title-text-color)
-    font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height:1.2;
+  color: var(--title-text-color);
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
 }
 .logo-accent {
-    color:#2196F3;
+  color: #2196f3;
 }
 
 .site-nav .link {
-color: var(--title-text-color);
-font-weight:500;
-font-size: 14px;
-line-height: 1.1
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
-.site-nav .link .current {
-    color: red;
+.site-nav .link.current {
+  color: red;
 }
 
-  .auth-nav .contact {
-      color: var(--primary-text-color);
-      font-weight:500;
-      font-weight:500;
-    font-size: 14px;
-line-height: 1.1
-  }
+.auth-nav .contact {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+}
 
 .auth-nav .contact:hover,
 .auth-nav .contact:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .hero-title {
-    color: var(--primary-white-color);
-    background: rgba(47, 48, 58, 0.8);
-font-weight: 900;
-font-size: 44px;
-line-height: 1.4;
-text-align: center;
+  color: var(--primary-white-color);
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
 }
 .button.primary {
-color: var(--primary-white-color);
-background: #2196F3;
-font-family: inherit;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-padding: 10px 32px;
-min-width: 200px;
-text-align: center;
+  color: var(--primary-white-color);
+  background: #2196f3;
+  font-family: inherit;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  text-align: center;
 }
 /*.button.primary:hover {
     color: tomato;
 }*/
 
 .features-title {
-    color:var(--title-text-color);
-    font-weight: 700;
-font-size: 14px;
-line-height: 1.2;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
 }
 .features-text {
-    color: var(--primary-text-color);
-    font-weight:400;
-font-size: 14px;
-line-height: 1.7;
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
 }
 .features-box {
-width: 270px;
-height: 120px;
-left: 215px;
-top: 774px;
-background: #F5F4FA;
-border-radius: 4px
+  width: 270px;
+  height: 120px;
+  left: 215px;
+  top: 774px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .function-title {
-    color: var(--title-text-color);
-    font-weight: 700;
-font-size: 36px;
-line-height: 1.2;
-text-align: center;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .function-subtitle:hover {
-    color: red;
+  color: red;
 }
 .function-subtitle {
-    color:var(--primary-white-color);
-    background: rgba(47, 48, 58, 0.8);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
+  color: var(--primary-white-color);
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
 }
-
 
 .team-title {
-    color:var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
 }
 .team-name {
-    color: var(--title-text-color);
-    font-weight: 500;
-font-size: 16px;
-line-height: 1.1;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+}
 
 .team-position {
-    color: var(--primary-text-color);
-    font-weight:400;
-font-size: 16px;
-line-height: 1.1;
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
 }
-.clients-title{
-    color: tomato;
+.clients-title {
+  color: tomato;
 }
+
 .footer-logo {
-    color:var(--title-text-color)
-    font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height:1.2;
+  color: var(--title-text-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
 }
+
 .footer-logo-accent {
-    color:#2196F3;
+  color: #2196f3;
 }
+
 .footer-address {
-    color: tomato;
+  color: tomato;
 }
-
-
 
 .portfolio-button {
-    color:var(--primary-white-color))
+  color: var(--primary-white-color);
 }
 .portfolio-title {
-    color:red;
+  color: red;
 }
 .footer-button {
-    position: absolute;
-width: 358px;
-height: 50px;
-left: 815px;
-top: 2779px;
+  position: absolute;
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 2779px;
 
-border: 1px solid rgba(255, 255, 255, 0.3);
-box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
 }

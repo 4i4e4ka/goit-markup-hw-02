@@ -26,10 +26,13 @@ body {
   letter-spacing: 0.03em;
   margin: 0;
 }
+
 .container {
   width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 a {
@@ -95,6 +98,7 @@ a {
   text-align: center;
 }
 .button.primary {
+  display: inline-block;
   color: var(--primary-white-color);
   background: #2196f3;
   font-family: inherit;
@@ -137,9 +141,6 @@ a {
   text-align: center;
 }
 
-.function-subtitle:hover {
-  color: red;
-}
 .function-subtitle {
   color: var(--primary-white-color);
   background: rgba(47, 48, 58, 0.8);
@@ -169,39 +170,91 @@ a {
   line-height: 1.1;
 }
 .clients-title {
-  color: tomato;
+  color: var(--title-text-color);
 }
 
-.footer-logo {
-  color: var(--title-text-color);
-  font-family: Raleway;
+.footer {
+  background: #2f303a;
+}
+
+.footer .logo {
+  color: var(--primary-white-color);
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
 }
-
-.footer-logo-accent {
+.logo-accent {
   color: #2196f3;
 }
 
 .footer-address {
-  color: tomato;
-}
-
-.portfolio-button {
   color: var(--primary-white-color);
 }
-.portfolio-title {
-  color: red;
-}
-.footer-button {
-  position: absolute;
-  width: 358px;
-  height: 50px;
-  left: 815px;
-  top: 2779px;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
+.footer-contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-subscribe {
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.portfolio .button {
+  color: var(--title-text-color);
+  background: #f5f4fa;
+  display: inline-block;
+  padding: 22px 6px;
+  /* width: 128px;
+  height: 38px; */
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.portfolio .button-primary {
+  display: inline-block;
+  color: var(--title-text-color);
+  padding: 22px 6px;
+  /* width: 73px;
+  height: 38px; */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.portfolio .button-primary:hover,
+.portfolio .button-primary:focus {
+  color: var(--title-text-color);
+  background: var(--accent-color);
+}
+
+.portfolio .button:hover,
+.portfolio .button:focus {
+  color: var(--title-text-color);
+  background: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.portfolio-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.portfolio-bigtext {
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+}
+
+.portfolio-text {
+  color: var(--primary-text-color);
 }

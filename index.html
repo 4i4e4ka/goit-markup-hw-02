@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Студия вебдизайна</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap&family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
@@ -19,62 +19,79 @@
       integrity="sha512-yp4nScgc3FLGSJK6gj7q+YzX4ApX8ifljxvw3x5oYG4Js/u7ABw/U+pP31kefS2iz83pHbwe+Le2WvcosArp6Q=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <!--<a href="#">
+      <div class="container">
+        <nav>
+          <!--<a href="#">
                 <img src="./images/logo.svg" alt="логотип">
                 </a>-->
 
-        <a href="" class="logo">
-          <span class="logo-accent">Web</span>
-          <span>Studio</span>
-        </a>
+          <a href="" class="logo">
+            <span class="logo-accent">Web</span>
+            <span>Studio</span>
+          </a>
 
-        <ul class="site-nav list">
-          <li>
-            <a href="./index.html" class="link current">Студия</a>
-          </li>
+          <ul class="site-nav list">
+            <li>
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
 
+            <li>
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li>
+              <a href="" class="link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container">
+        <ul class="auth-nav list">
           <li>
-            <a href="./portfolio.html" class="link">Портфолио</a>
+            <a href="" class="contact">
+              <img
+                src="./images/envelope.svg"
+                alt="иконка конверта"
+                width="11"
+              />
+              <span>info@devstudio.com</span>
+            </a>
           </li>
           <li>
-            <a href="" class="link">Контакты</a>
+            <a href="#">
+              <img src="./images/tel.svg" alt="иконка телефона" width="10" />
+              <span class="contact">+38 096 111 11 11</span></a
+            >
           </li>
         </ul>
-      </nav>
-      <!--Контакты я бы или в div или address, но делаю списком-->
-      <ul class="auth-nav list">
-        <li>
-          <a href="" class="contact">
-            <img src="./images/envelope.svg" alt="иконка конверта" width="11" />
-            <span>info@devstudio.com</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="./images/tel.svg" alt="иконка телефона" width="10" />
-            <span class="contact">+38 096 111 11 11</span></a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section class="hero">
-        <!--фоновая картинка при помощо CSS-->
-        <h1 class="hero-title">
-          Эффективные решения для вашего бизнеса
-        </h1>
-        <img src="images/header img.png" alt="изображение героя" width="1600" />
-        <!--тут наверное копка?-->
-        <!-- <a href=""class="button primary"> <img src="./images/button-yslyga.svg" >Заказать услугу</a> -->
-        <button class="button primary" type="button">Заказать услугу</button>
-      </section>
+      <div class="container">
+        <section class="hero">
+          <!--фоновая картинка при помощо CSS-->
+          <h1 class="hero-title">
+            Эффективные решения для вашего бизнеса
+          </h1>
+
+          <!-- <img
+            src="images/header img.png"
+            alt="изображение героя"
+            width="1600"
+          /> -->
+          <!--тут наверное копка?-->
+          <!-- <a href=""class="button primary"> <img src="./images/button-yslyga.svg" >Заказать услугу</a> -->
+          <button class="button primary" type="button">Заказать услугу</button>
+        </section>
+      </div>
+
       <div class="container">
         <section>
-          <h2><!--Скрытый заголовок--></h2>
+          <!-- <h2>Feature list</h2> -->
           <ul class="features list">
             <li>
               <img
@@ -128,177 +145,184 @@
           </ul>
         </section>
       </div>
+      <div class="container">
+        <section class="function">
+          <h3 class="function-title">Чем мы занимаемся</h3>
+          <ul class="function list">
+            <li>
+              <a href="">
+                <img
+                  src="images/desctopapp.jpg"
+                  alt="изображение дескстопного приложение"
+                  width="370"
+                />
+                <p class="function-subtitle">Десктопные приложения</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="images/mobapp.png"
+                  alt="изображение мобильного приложение"
+                  width="370"
+                />
+                <p class="function-subtitle">Мобильные приложения</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="images/designsolution.png"
+                  alt="изображение дизайнерские решения"
+                  width="370"
+                />
+                <p class="function-subtitle">Дизайнерские решения</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
 
-      <section class="function">
-        <h3 class="function-title">Чем мы занимаемся</h3>
-        <ul class="function list">
-          <li>
-            <a href="">
-              <img
-                src="images/desctopapp.jpg"
-                alt="изображение дескстопного приложение"
-                width="370"
-              />
-              <p class="function-subtitle">Десктопные приложения</p>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img
-                src="images/mobapp.png"
-                alt="изображение мобильного приложение"
-                width="370"
-              />
-              <p class="function-subtitle">Мобильные приложения</p>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img
-                src="images/designsolution.png"
-                alt="изображение дизайнерские решения"
-                width="370"
-              />
-              <p class="function-subtitle">Дизайнерские решения</p>
-            </a>
-          </li>
-        </ul>
-      </section>
       <section class="team">
-        <h3 class="team-title">Наша команда</h3>
-        <ul class="team list">
-          <li>
-            <img src="./images/nikolai.jpg" alt="фото Николая" width="270" />
-            <p class="team-name">Николай Кучеренко</p>
-            <p class="team-position">Product Designer</p>
-          </li>
+        <div class="container">
+          <h3 class="team-title">Наша команда</h3>
+          <ul class="team list">
+            <li>
+              <img src="./images/nikolai.jpg" alt="фото Николая" width="270" />
+              <p class="team-name">Николай Кучеренко</p>
+              <p class="team-position">Product Designer</p>
+            </li>
 
-          <li>
-            <a href=""
-              ><img src="images/instanik.svg" alt="изображения инстаграмм"
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img src="images/twitter.svg" alt="изображения твиттер"
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img src="images/facebook.svg" alt="изображения фейсбук"
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img src="images/linkedin.svg" alt="изображения линкидинн"
-            /></a>
-          </li>
+            <li>
+              <a href=""
+                ><img src="images/instanik.svg" alt="изображения инстаграмм"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/twitter.svg" alt="изображения твиттер"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/facebook.svg" alt="изображения фейсбук"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/linkedin.svg" alt="изображения линкидинн"
+              /></a>
+            </li>
 
-          <li>
-            <img src="./images/olha.png" alt="фото ольги" width="270" />
-            <p class="team-name">Ольга Иванова</p>
-            <p class="team-position">Frontend Developer</p>
-          </li>
+            <li>
+              <img src="./images/olha.png" alt="фото ольги" width="270" />
+              <p class="team-name">Ольга Иванова</p>
+              <p class="team-position">Frontend Developer</p>
+            </li>
 
-          <li>
-            <a href=""
-              ><img src="images/instanik.svg" alt="изображения инстаграмм"
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img src="images/twitter.svg" alt="изображения твиттер"
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img src="images/facebook.svg" alt="изображения фейсбук"
-            /></a>
-          </li>
-          <li>
-            <a href=""
-              ><img src="images/linkedin.svg" alt="изображения линкидинн"
-            /></a>
-          </li>
+            <li>
+              <a href=""
+                ><img src="images/instanik.svg" alt="изображения инстаграмм"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/twitter.svg" alt="изображения твиттер"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/facebook.svg" alt="изображения фейсбук"
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="images/linkedin.svg" alt="изображения линкидинн"
+              /></a>
+            </li>
 
-          <li>
-            <img src="./images/andrii.png" alt="фото Николая" width="270" />
-            <p class="team-name">Андрей Шевченко</p>
-            <p class="team-position">Marketing</p>
-          </li>
+            <li>
+              <img src="./images/andrii.png" alt="фото Николая" width="270" />
+              <p class="team-name">Андрей Шевченко</p>
+              <p class="team-position">Marketing</p>
+            </li>
 
-          <li>
-            <a href="">
-              <img src="images/instanik.svg" alt="изображения инстаграмм"
-            /></a>
-          </li>
-          <li>
-            <a href="">
-              <img src="images/twitter.svg" alt="изображения твиттер"
-            /></a>
-          </li>
-          <li>
-            <a href="">
-              <img src="images/facebook.svg" alt="изображения фейсбук"
-            /></a>
-          </li>
-          <li>
-            <a href="">
-              <img src="images/linkedin.svg" alt="изображения линкидинн"
-            /></a>
-          </li>
+            <li>
+              <a href="">
+                <img src="images/instanik.svg" alt="изображения инстаграмм"
+              /></a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/twitter.svg" alt="изображения твиттер"
+              /></a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/facebook.svg" alt="изображения фейсбук"
+              /></a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/linkedin.svg" alt="изображения линкидинн"
+              /></a>
+            </li>
 
-          <li>
-            <img src="./images/ivan.png" alt="фото Николая" width="270" />
-            <p class="team-name">Иван Николаев</p>
-            <p class="team-position">UI Designer</p>
-          </li>
+            <li>
+              <img src="./images/ivan.png" alt="фото Николая" width="270" />
+              <p class="team-name">Иван Николаев</p>
+              <p class="team-position">UI Designer</p>
+            </li>
 
-          <li>
-            <a href="">
-              <img src="images/instanik.svg" alt="изображения инстаграмм"
-            /></a>
-          </li>
-          <li>
-            <a href="">
-              <img src="images/twitter.svg" alt="изображения твиттер"
-            /></a>
-          </li>
-          <li>
-            <a href="">
-              <img src="images/facebook.svg" alt="изображения фейсбук"
-            /></a>
-          </li>
-          <li>
-            <a href="">
-              <img src="images/linkedin.svg" alt="изображения линкидинн"
-            /></a>
-          </li>
-        </ul>
+            <li>
+              <a href="">
+                <img src="images/instanik.svg" alt="изображения инстаграмм"
+              /></a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/twitter.svg" alt="изображения твиттер"
+              /></a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/facebook.svg" alt="изображения фейсбук"
+              /></a>
+            </li>
+            <li>
+              <a href="">
+                <img src="images/linkedin.svg" alt="изображения линкидинн"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="clients">
-        <h3 class="clients-title">Постоянные клиенты</h3>
-        <ul class="clients list">
-          <li>
-            <img src="./images/client1.png" alt="client" />
-          </li>
-          <li>
-            <img src="./images/client2.png" alt="client" />
-          </li>
-          <li>
-            <img src="./images/client3.png" alt="client" />
-          </li>
-          <li>
-            <img src="./images/client4.png" alt="client" />
-          </li>
-          <li>
-            <img src="./images/client5.png" alt="client" />
-          </li>
-          <li>
-            <img src="./images/client6.png" alt="client" />
-          </li>
-        </ul>
-      </section>
+
+      <div class="container">
+        <section class="clients">
+          <h3 class="clients-title">Постоянные клиенты</h3>
+          <ul class="clients list">
+            <li>
+              <img src="./images/client1.png" alt="client" />
+            </li>
+            <li>
+              <img src="./images/client2.png" alt="client" />
+            </li>
+            <li>
+              <img src="./images/client3.png" alt="client" />
+            </li>
+            <li>
+              <img src="./images/client4.png" alt="client" />
+            </li>
+            <li>
+              <img src="./images/client5.png" alt="client" />
+            </li>
+            <li>
+              <img src="./images/client6.png" alt="client" />
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">

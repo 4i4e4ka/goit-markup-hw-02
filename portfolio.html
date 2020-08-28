@@ -23,9 +23,57 @@
   </head>
   <body>
     
-
-
     <header>
+      <div class="container">
+        <nav class="main-nav">
+          <!--<a href="#">
+                <img src="./images/logo.svg" alt="логотип">
+                </a>-->
+
+          <a href="" class="logo">
+            <span class="logo-accent">Web</span>
+            <span>Studio</span>
+          </a>
+
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+
+            <li class="item">
+              <a href="" class="link">Контакты</a>
+            </li>
+          </ul>
+        <!-- </nav> -->
+      
+      <!-- <div class="container main-nav"> -->
+        <ul class="auth-nav list">
+          <li class="item">
+            <a href="" class="contact">
+              <img
+                src="./images/envelope.svg"
+                alt="иконка конверта"
+                width="11"
+              />
+              <span>info@devstudio.com</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#">
+              <img src="./images/tel.svg" alt="иконка телефона" width="10" />
+              <span class="contact">+38 096 111 11 11</span></a
+            >
+          </li>
+        </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- <header>
       <nav>
         <a href="" class="logo">
           <span class="logo-accent">Web</span>
@@ -54,47 +102,41 @@
           >
         </li>
       </ul>
-    </header>
+    </header> -->
 
 
     <main>
+
+      <div class="container">
+        <section class="portfolio">
+          <!-- <h1>ПОРТФОЛИО</h1> -->
+          <ul class="portfolio list">
+            <li>
+              <button type="button" class="button-primary">Все</button>
+            </li>
+            <li>
+              <button type="button" class="button">Веб-сайты</button>
+            </li>
+            <li>
+              <button type="button" class="button">Приложения</button>
+            </li>
+            <li>
+              <button type="button" class="button">Дизайн</button>
+            </li>
+            <li>
+              <button type="button" class="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+
+<div class="container">
       <section class="portfolio">
-        <!-- <h1>ПОРТФОЛИО</h1> -->
         <ul class="portfolio list">
-          <li>
-            <button type="button" class="button-primary">Все</button>
-          </li>
-          <li>
-            <button type="button" class="button">Веб-сайты</button>
-          </li>
-          <li>
-            <button type="button" class="button">Приложения</button>
-          </li>
-          <li>
-            <button type="button" class="button">Дизайн</button>
-          </li>
-          <li>
-            <button type="button" class="button">
-              Маркетинг
-            </button>
-          </li>
-        </ul>
-      </section>
-      <section class="portfolio">
-        <ul class="portfolio list">
-          <li>
-            <a href="#">
-              <!-- <img src="./images/technokrak.png" alt="скрин технокряка" width="370"/>-->
-              <h2 class="portfolio-title">Технокряк</h2>
-              <p class="portfolio-bigtext">
-                Технокряк это современная площадка распространения коронавируса.
-                Компании используют эту платформу для цифрового шпионажа и атак
-                на защищённые сервера конкурентов.
-              </p>
-              <p class="portfolio-text">Веб-сайт</p>
-            </a>
-          </li>
-          <li>
+          <li class="item">
             <a href="#">
               <img
                 src="./images/posterorlean.jpg"
@@ -105,14 +147,42 @@
               <p class="portfolio-text">Дизайн</p>
             </a>
           </li>
-          <li>
+          <li class="item">
             <a href="#">
               <img src="./images/seafood.jpg" alt="фото сифуд" width="370" />
               <h2 class="portfolio-title">Ресторан Seafood</h2>
               <p class="portfolio-text">Приложение</p>
             </a>
+            <!-- <a href="#"> -->
+              <!-- <img src="./images/technokrak.png" alt="скрин технокряка" width="370"/> -->
+              <!-- <h2 class="portfolio-title">Технокряк</h2>
+              <p class="portfolio-bigtext">
+                Технокряк это современная площадка распространения коронавируса.
+                Компании используют эту платформу для цифрового шпионажа и атак
+                на защищённые сервера конкурентов.
+              </p>
+              <p class="portfolio-text">Веб-сайт</p>
+            </a> -->
           </li>
-          <li>
+          <li class="item">
+            <a href="#">
+              <img
+                src="./images/posterorlean.jpg"
+                alt="фото орлеан"
+                width="370"
+              />
+              <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
+              <p class="portfolio-text">Дизайн</p>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="#">
+              <img src="./images/seafood.jpg" alt="фото сифуд" width="370" />
+              <h2 class="portfolio-title">Ресторан Seafood</h2>
+              <p class="portfolio-text">Приложение</p>
+            </a>
+          </li> -->
+          <li class="item">
             <a href="#">
               <img
                 src="./images/projectprime.jpg"
@@ -123,7 +193,7 @@
               <p class="portfolio-text">Маркетинг</p>
             </a>
           </li>
-          <li>
+          <li class="item">
             <a href="#">
               <img
                 src="./images/projectboxes.jpg"
@@ -134,7 +204,7 @@
               <p class="portfolio-text">Приложение</p>
             </a>
           </li>
-          <li>
+          <li class="item">
             <a href="#">
               <img
                 src="./images/inspiration.jpg"
@@ -145,21 +215,21 @@
               <p class="portfolio-text">Приложение</p>
             </a>
           </li>
-          <li>
+          <li class="item">
             <a href="#">
               <img src="./images/book.jpg" alt="фото книги" width="370" />
               <p class="portfolio-title">Издание Limited Edition</p>
               <p class="portfolio-text">Дизайн</p>
             </a>
           </li>
-          <li>
+          <li class="item">
             <a href="#">
               <img src="./images/lable.jpg" alt="фото лейбы" width="370" />
               <p class="portfolio-title">Проект LAB</p>
               <p class="portfolio-text">Маркетинг</p>
             </a>
           </li>
-          <li>
+          <li class="item">
             <a href="#">
               <img
                 src="./images/growingbusiness.jpg"
@@ -172,7 +242,13 @@
           </li>
         </ul>
       </section>
+
+      </div>
+
     </main>
+
+
+<div class="container">
     <footer class="footer">
       <div class="footer">
         <a href="" class="logo">
